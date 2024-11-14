@@ -1,0 +1,194 @@
+:root {
+    --Primary: #00B207;
+    --Soft-Primary: #84D187;
+    --Hard-Primary: #2C742F;
+    --Warning: #FF8A00;
+    --Danger: #EA4B48;
+    --White: #FFFFFF;
+    --header-bg: #333333;
+    --border:#E6E6E6;
+    --black:#000000;
+    --black2:#808080;
+}
+
+/* hero start */
+.hero{
+    padding-top: 9rem;
+}
+.hero-container{
+    width: 100%;
+    padding: 0 2rem;
+    background: url(../image/hero_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hero-container h1{
+    color: var(--White);
+    font-size: 48px;
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.hero-container .Saleup{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    border-left: 1px solid var(--Soft-Primary);
+}
+.hero-container .Saleup h5{
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.hero-container .Saleup h5 span{
+    background-color: var(--Warning);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+.hero-container .Saleup p{
+    color: #FFFFFF;
+}
+
+.hero-container .hero-btn a{
+    color: var(--Primary);
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    background-color: var(--White);
+    font-weight: 600;
+    transition: .5s;
+}
+.hero-container .hero-btn a:hover{
+    color: var(--black);
+}
+.hero-container .hero-btn a i{
+   padding-left: .5rem;
+   
+}
+
+.hero-containerr {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+.containerr {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background: url(../image/hero_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 288px;
+    border-radius: 10px;
+}
+
+.containerr span{
+    font-size: 14px;
+}
+.containerr p{
+    margin-bottom: 1rem;
+}
+.containerr a{
+    color: var(--Primary);
+    font-weight: 600;
+    transition: .5s;
+}
+.containerr a i{
+    margin-left: .5rem;
+}
+.containerr a:hover{
+   color: var(--black);
+}
+
+.containerrscends {
+    padding-top: 2rem;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../image/hero_3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 288px;
+    border-radius: 10px;
+}
+.containerrscends span,
+.containerrscends .heading{
+   color: var(--White);
+}
+.containerrscends a{
+   color: var(--Primary);
+   transition: .5s;
+}
+.containerrscends a:hover{
+   color: var(--Warning);
+}
+.containerrscends  a i{
+   margin-left: .5rem;
+}
+
+.delevary-contant{
+    box-shadow: 10px 10px 10px var(--border);
+}
+.delevary{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.delevary i{
+    font-size: 25px;
+    color: var(--Soft-Primary);
+}
+.delevary .delevary-text{
+    display: flex;
+    flex-direction: column;
+}
+.delevary .delevary-text h5{
+   font-size: 16px;
+   font-weight: 600;
+}
+.delevary .delevary-text p{
+   font-size: 14px;
+}
+
+/* hero end */
+
+
+
+
+@media (max-width:1320px){
+   
+}
+@media (max-width:1140px){
+    
+}
+@media (max-width:960px){
+    /* hero */
+    .hero-container h1{
+        font-size: 40px;
+        width: 70%;
+    }
+    /* hero end */
+}
+@media (max-width:720px){
+    
+}
+@media (max-width:540px){
+   /* hero */
+   .hero-container h1{
+    font-size: 40px;
+    width: 100%;
+}
+/* hero end */ 
+}

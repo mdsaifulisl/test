@@ -1,0 +1,191 @@
+
+:root {
+    --Primary: #00B207;
+    --Soft-Primary: #84D187;
+    --Hard-Primary: #2C742F;
+    --Warning: #FF8A00;
+    --Danger: #EA4B48;
+    --White: #FFFFFF;
+    --header-bg: #333333;
+    --border:#E6E6E6;
+    --black:#000000;
+    --black2:#808080;
+    --product-name:#4D4D4D;
+}
+
+/* Popular Categories */
+.popular-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-text a{
+    color: var(--Primary);
+    transition: .5s;
+    text-wrap: nowrap;
+}
+.popular-text a:hover{
+    color: var(--Soft-Primary);
+}
+
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+.popular-items .popular-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 200px;
+    padding: 1rem 0;
+    text-align: center;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); */
+    border: 1px solid var(--border);
+    transition: .5s;
+}
+.popular-items .popular-box:hover{
+    border: 1px solid var(--Soft-Primary);
+}
+.popular-items .popular-box img{
+    width: 100%;
+}
+.popular-items .popular-box p{
+    font-weight: 600;
+    color: var(--black);
+    transition: .5s;
+}
+.popular-items .popular-box:hover p{
+    color: var(--Primary);
+}
+/* Popular Categories end */
+
+
+
+/* Popular Products */
+.popular-product {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+.popular-product .product-box{
+    width: 100%;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--border);
+    transition: .5s;
+}
+.popular-product .product-box:hover{
+    border: 1px solid var(--Primary);
+}
+
+.popular-product .product-box .productimg img{
+    width: 100%;
+}
+.popular-product .product-box .pitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-product .product-box .pitem .ptext p{
+    color: var(--product-name);
+    transition: .5s;
+}
+.popular-product .product-box:hover .pitem .ptext p{
+    color: var(--Primary);
+}
+.popular-product .product-box .pitem .ptext span{
+    display: flex;
+    gap: .5rem;
+    align-items: flex-end;
+}
+.popular-product .product-box .pitem .ptext span .price{
+    font-weight: 600;
+}
+.popular-product .product-box .pitem .ptext span strike{
+    font-size: 12px;
+}
+.popular-product .product-box .pitem .ptext .revew-star i{
+    color: var(--Warning);
+}
+.popular-product .product-box .pitem .cartbtns{
+   height: 50px;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.popular-product .product-box .pitem .cartbtns{
+   height: 50px;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: #F2F2F2;
+   transition: .5s;
+}
+.popular-product .product-box:hover .pitem .cartbtns{
+   background-color: var(--Primary);
+}
+
+
+.popular-product .product-box .pitem .cartbtns i{
+    margin-top: 3px;
+ }
+.popular-product .product-box:hover .pitem .cartbtns i{
+    color: var(--White);
+    transition: .5s;
+ }
+/* Popular Products end */
+
+
+
+
+
+
+@media (max-width:1397px){
+    .popular-items{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .popular-product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width:1200px){
+    .popular-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width:990px){
+    .popular-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .popular-product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:765px){
+    .popular-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .popular-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:540px){
+    .popular-items .popular-box{
+        width: 100%;
+    }
+
+    .popular-product .product-box .pitem{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
